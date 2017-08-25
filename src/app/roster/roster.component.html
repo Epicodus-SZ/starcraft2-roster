@@ -1,0 +1,20 @@
+<section class="unitList">
+  <div class="divTable">
+    <div class="divTableBody">
+      <div class="divTableRow">
+        <div class="divTableCell">$Key</div>
+        <div class="divTableCell">img</div>
+        <div class="divTableCell">Name</div>
+        <div class="divTableCell">Mineral</div>
+        <div class="divTableCell">Vespene</div>
+        <div class="divTableCell">Supply</div>
+        <div class="divTableCell">Build Time</div>
+        <div class="divTableCell">Build From</div>
+        <div class="divTableCell">Life</div>
+        <div class="divTableCell">Energy</div>
+        <div class="divTableCell">Armor</div>
+      </div>
+      <app-unit-list-item [unit]="unit" class="divTableRow" *ngFor="let unit of units"></app-unit-list-item>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+{
+  "units": [{
+    "name": "SCV",
+    "mineral": 50,
+    "vespene": 0,
+    "supply": 1,
+    "buildTime": 17,
+    "buildFrom": "Command Center",
+    "life": 45,
+    "energy": 0,
+    "armor": 0
+  }, {
+    "name": "Marine",
+    "mineral": 50,
+    "vespene": 0,
+    "supply": 1,
+    "buildTime": 25,
+    "buildFrom": "Barracks",
+    "life": 45,
+    "energy": 0,
+    "armor": 0
+  }, {
+    "name": "Marauder",
+    "mineral": 100,
+    "vespene": 25,
+    "supply": 2,
+    "buildTime": 30,
+    "buildFrom": "Barracks",
+    "life": 125,
+    "energy": 0,
+    "armor": 1
+  }, {
+    "name": "Reaper",
+    "mineral": 50,
+    "vespene": 50,
+    "supply": 1,
+    "buildTime": 45,
+    "buildFrom": "Barracks",
+    "life": 60,
+    "energy": 0,
+    "armor": 0
+  }]
+}
