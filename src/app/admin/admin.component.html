@@ -9,25 +9,52 @@
         <br>
         <input #newName>
       </div>
-
       <div>
         <label>Mineral:</label>
         <br>
         <input #newMineral>
       </div>
-
       <div>
-        <label>Vespene:</label>
+        <label>Vespine Gas:</label>
         <br>
         <input #newVespene>
       </div>
-
+      <div>
+        <label>Suply:</label>
+        <br>
+        <input #newSupply>
+      </div>
+      <div>
+        <label>build Time:</label>
+        <br>
+        <input #newBuildTime>
+      </div>
+      <div>
+        <label>Build From:</label>
+        <br>
+        <input #newBuildFrom>
+      </div>
+      <div>
+        <label>Life:</label>
+        <br>
+        <input #newLife>
+      </div>
+      <div>
+        <label>Energy:</label>
+        <br>
+        <input #newEnergy>
+      </div>
+      <div>
+        <label>Armor:</label>
+        <br>
+        <input #newArmor>
+      </div>
       <div>
         <label>Description:</label>
         <br>
         <textarea #newDesc></textarea>
       </div>
-      <button (click)="submitForm(newName.value, newMineral.value, newVespene.value, newDesc.value); newName.value=''; newMineral.value='';newVespene.value=''; newDesc.value=''">Add New Unit</button>
+      <button (click)="submitForm(newName.value, newMineral.value, newVespene.value, #newSupply.value, newBuildTime.value, newBuildFrom.value, newLife.value, newEnergy.value, newArmor.value, newDesc.value)">Add New Unit</button>
     </div>
   </div>
 </div>

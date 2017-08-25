@@ -16,16 +16,25 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, mineral: number, vespene: number, desc: string) {
+  submitForm(name: string, 
+    mineral: number, 
+    vespene: number, 
+    supply: number, 
+    buildTime: number, 
+    buildFrom: string, 
+    life: number, 
+    energy: number, 
+    armor: number, 
+    desc: string) {
     var newUnit: Unit = new Unit(name,  
       mineral, 
       vespene,
-      1,
-      1,
-      "buildFrom",
-      23,
-      23,
-      1,
+      supply,
+      buildTime,
+      buildFrom,
+      life,
+      energy,
+      armor,
       desc);
     this.unitService.addUnit(newUnit);
   }

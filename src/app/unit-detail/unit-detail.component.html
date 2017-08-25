@@ -1,7 +1,8 @@
-<p>
-  unit-detail works! name={{unit.name}}
-  <br> desc={{unit.desc}}
-</p>
+<div>
+  <h1>{{unit.name}}</h1>
+  <p>Costs: <b>{{unit.mineral}}</b> minerals, <b>{{unit.vespene}}</b> Vespene gas.</p>
+  <p>{{unit.desc}}</p>
+</div>
 
 <div><button (click)="editFormVisable = !editFormVisable">Edit</button> <button (click)="onDeleteUnit()">Delete</button></div>
 
