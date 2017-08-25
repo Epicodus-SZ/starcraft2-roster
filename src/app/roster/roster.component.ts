@@ -13,18 +13,23 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class RosterComponent implements OnInit {
   // variables
-
-  //units: FirebaseListObservable<any[]>;
   units;
   
 
   constructor(private router: Router, private unitService: UnitService) { }
 
   ngOnInit() {
-    this.units = this.unitService.getUnits().subscribe(dataEmitted => {
-      
-      this.units = dataEmitted
-    });    
+    // this.units = this.unitService.getUnits().subscribe(dataEmitted => {
+
+    //   this.units = dataEmitted
+    // }); 
+    
+    this.units = this.unitService.getUnits();
+  }
+
+  seeDetails(passObject) {
+    debugger;
+    this.router.navigate(['units', passObject.$key]);
   }
 
 }

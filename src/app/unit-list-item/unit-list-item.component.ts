@@ -18,4 +18,7 @@ export class UnitListItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  unitclass() {
+    return this.unit.name.replace(/\s/g,"_");
+  }
 }

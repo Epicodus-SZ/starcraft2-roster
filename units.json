@@ -8,7 +8,8 @@
     "buildFrom": "Command Center",
     "life": 45,
     "energy": 0,
-    "armor": 0
+    "armor": 0,
+    "desc": "Initially used during the reconstruction of the old Confederacy’s Tarsonian orbital platforms, the T-280 SCV is a staple of construction and repair across the Dominion. The SCV is the workhorse of the Terran planets due to its ability to perform a multitude of tasks, including constructing new buildings, repairing damaged structures and units, and harvesting and transporting raw resource materials. This versatility and unmatched reliability make the SCV an invaluable tool in rapidly establishing Marine encampments on any terrain."
   }, {
     "name": "Marine",
     "mineral": 50,
@@ -18,7 +19,8 @@
     "buildFrom": "Barracks",
     "life": 45,
     "energy": 0,
-    "armor": 0
+    "armor": 0,
+    "desc": "Marines are the first line of defense for Terran planets in the Koprulu sector. Under the old Confederacy, the majority of Marines were criminals or rebels who had undergone mandatory neural resocialization to ensure their absolute loyalty. This practice has been reportedly scaled back, but it remains common due to insufficient volunteers to serve in the military. The heavy armor worn by Marines is effective against small-arms fire and provides them with full life support and NBC (Nuclear/Biological/Chemical) shielding for operation in deep space and other hostile environments. Marines are armed with C-14 Impaler Gauss Rifles that fire 8mm metal spikes at hypersonic speeds."
   }, {
     "name": "Marauder",
     "mineral": 100,
@@ -28,7 +30,8 @@
     "buildFrom": "Barracks",
     "life": 125,
     "energy": 0,
-    "armor": 1
+    "armor": 1,
+    "desc": "Primarily a support unit, the remodeled heavyweight Firebat suit packs Quad K12 Punisher grenade launchers that devastate enemy structures and vehicles from a distance. As the Dominion military began to reevaluate its systems, it determined that it was still geared to fight Terran-vs.-Terran battles that were imagined pre-Zerg. There needed to be an increase in armor-shattering combat units with weapons capable of piercing through hardened Zerg carapaces. The Marauder was the answer. These virtual walking tanks have given the Dominion infantry the hard-hitting, easy-to-produce support that had been missing on the front lines."
   }, {
     "name": "Reaper",
     "mineral": 50,
@@ -38,6 +41,7 @@
     "buildFrom": "Barracks",
     "life": 60,
     "energy": 0,
-    "armor": 0
+    "armor": 0,
+    "desc": "Marine candidates who remain unmanageable after neural resocialization are sent to be trained as Reapers. These troops are chemically altered to heighten their aggression even further, and then they are instructed in close-quarters combat and the use of Jet Packs. These grant Reapers a high degree of mobility, allowing them to traverse obstacles easily and cover ground rapidly. In combat, Reapers attack with rapid-fire dual Gauss Pistols. Reapers are guaranteed their freedom after two years of service, but none has survived for more than six months."
   }]
 }

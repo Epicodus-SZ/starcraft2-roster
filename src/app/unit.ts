@@ -8,7 +8,8 @@ export class Unit {
     public buildFrom: string,
     public life: number,
     public energy: number,
-    public armor: number
+    public armor: number,
+    public desc:string
   ) { }
   
 }

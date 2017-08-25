@@ -7,3 +7,27 @@
   display: table-cell;
   padding: 3px 10px;
 }
+
+.unit {
+  width: 54px;
+  height: 49px;
+  background-image: url('http://us.battle.net/sc2/static/images/game/unit-thumbs-54x49-table.gif');
+  background-repeat: no-repeat;
+  background-color: rgb(59, 61, 64);
+}
+
+.SCV {
+  background-position: -2px -212px;
+}
+
+.Marine {
+  background-position: -54px -212px;
+}
+
+.Marauder {
+  background-position: -108px -212px;
+}
+
+.Reaper {
+  background-position: -162px -212px;
+}

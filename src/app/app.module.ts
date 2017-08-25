@@ -8,11 +8,13 @@ import { masterFirebaseConfig } from './api-keys';
 // For Firebase
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { RosterComponent } from './roster/roster.component';
 
+import { RosterComponent } from './roster/roster.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { UnitListItemComponent } from './unit-list-item/unit-list-item.component';
+import { UnitDetailComponent } from './unit-detail/unit-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -28,7 +30,9 @@ export const firebaseConfig = {
     AppComponent,
     RosterComponent,
     AboutComponent,
-    UnitListItemComponent
+    UnitListItemComponent,
+    UnitDetailComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
