@@ -35,3 +35,7 @@
 .divTableBody {
   display: table-row-group;
 }
+
+.unitRow:hover {
+  background-color: red;
+}

@@ -16,6 +16,7 @@ export class UnitDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private unitService: UnitService,) { }
   unitId: string;
   unit;
+  editFormVisable: boolean = false;
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -42,13 +43,23 @@ export class UnitDetailComponent implements OnInit {
     if(confirm("Are you sure you want to delete this item from the inventory?")){
       this.unitService.deleteUnit(this.unitId);
       this.router.navigate(['roster']);
-      
-
     }
   }
 
-  onUpdateUnit() {
+  onUpdateUnit(editName: string, editMineral: number, editVespene: number, editSupply: number, editBuildTime: number, editBuildFrom: string, editLife: number, editEnergy: number, editArmor: number,   editDesc: string) {
     console.log("update event");
+    var updatedUnit: Unit = new Unit(editName,
+      editMineral,
+      editVespene,
+      editSupply,
+      editBuildTime,
+      editBuildFrom,
+      editLife,
+      editEnergy, 
+      editArmor,
+      editDesc);
+    this.unitService.updateUnit(updatedUnit, this.unitId);
+    this.editFormVisable = !this.editFormVisable;   
   }
   
 }

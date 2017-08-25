@@ -20,11 +20,19 @@ export class UnitService {
       this.units.push(newUnit);
     }
   
-    updateUnit(localUpdatedUnit){
-      var unitEntryInFirebase = this.getUnitById(localUpdatedUnit.$key);
-      unitEntryInFirebase.update({title: localUpdatedUnit.title,
-                                  artist: localUpdatedUnit.artist,
-                                  description: localUpdatedUnit.description});
+    updateUnit(localUpdatedUnit: Unit, unitKey: string){
+      var unitEntryInFirebase = this.getUnitById(unitKey);
+      unitEntryInFirebase.update({name: localUpdatedUnit.name,
+        mineral: localUpdatedUnit.mineral,
+        vespene: localUpdatedUnit.vespene,
+        supply: localUpdatedUnit.supply,
+        buildTime: localUpdatedUnit.buildTime,
+        buildFrom: localUpdatedUnit.buildFrom,
+        life: localUpdatedUnit.life,
+        energy: localUpdatedUnit.energy,
+        armor: localUpdatedUnit.armor,
+        desc: localUpdatedUnit.desc
+      });
     }
   
     deleteUnit(unitKey){
@@ -38,3 +46,15 @@ export class UnitService {
     }  
 
 }
+
+
+// name,  
+// mineral, 
+// vespene,
+// supply,
+// buildTime,
+// buildFrom, 
+// life,
+// energy,
+// armor,
+// desc

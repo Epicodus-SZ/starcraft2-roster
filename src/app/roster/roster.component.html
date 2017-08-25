@@ -13,7 +13,7 @@
         <div class="divTableCell">Energy</div>
         <div class="divTableCell">Armor</div>
       </div>
-      <app-unit-list-item [unit]="unit" class="divTableRow" *ngFor="let unit of units | async" (click)="seeDetails(unit)"></app-unit-list-item>
+      <app-unit-list-item [unit]="unit" class="unitRow divTableRow" *ngFor="let unit of units | async" (click)="seeDetails(unit)"></app-unit-list-item>
     </div>
   </div>
 </section>
