@@ -21,4 +21,6 @@ export class UnitListItemComponent implements OnInit {
   unitclass() {
     return this.unit.name.replace(/\s/g,"_");
   }
+
+
 }

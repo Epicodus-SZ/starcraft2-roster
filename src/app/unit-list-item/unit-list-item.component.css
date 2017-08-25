@@ -14,6 +14,7 @@
   background-image: url('http://us.battle.net/sc2/static/images/game/unit-thumbs-54x49-table.gif');
   background-repeat: no-repeat;
   background-color: rgb(59, 61, 64);
+  background-position: 100px 100px;
 }
 
 .SCV {

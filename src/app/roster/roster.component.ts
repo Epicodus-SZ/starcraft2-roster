@@ -28,7 +28,6 @@ export class RosterComponent implements OnInit {
   }
 
   seeDetails(passObject) {
-    debugger;
     this.router.navigate(['units', passObject.$key]);
   }
 

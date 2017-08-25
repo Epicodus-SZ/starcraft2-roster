@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { Router } from '@angular/router';
 import { Unit } from '../unit';
 import { UnitService } from '../unit.service';
 
@@ -12,7 +13,7 @@ import { UnitService } from '../unit.service';
 })
 export class UnitDetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private unitService: UnitService,) { }
+  constructor(private route: ActivatedRoute, private router: Router, private unitService: UnitService,) { }
   unitId: string;
   unit;
 
@@ -36,4 +37,18 @@ export class UnitDetailComponent implements OnInit {
      });
   }
 
+  onDeleteUnit() {
+    console.log("delete event");
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.unitService.deleteUnit(this.unitId);
+      this.router.navigate(['roster']);
+      
+
+    }
+  }
+
+  onUpdateUnit() {
+    console.log("update event");
+  }
+  
 }

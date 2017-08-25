@@ -27,8 +27,8 @@ export class UnitService {
                                   description: localUpdatedUnit.description});
     }
   
-    deleteUnit(localUnitToDelete){
-      var unitEntryInFirebase = this.getUnitById(localUnitToDelete.$key);
+    deleteUnit(unitKey){
+      var unitEntryInFirebase = this.getUnitById(unitKey);
       unitEntryInFirebase.remove();
     }
   
