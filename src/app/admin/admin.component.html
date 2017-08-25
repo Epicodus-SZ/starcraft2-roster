@@ -1,3 +1,33 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add unit to SC@ roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Mineral:</label>
+        <br>
+        <input #newMineral>
+      </div>
+
+      <div>
+        <label>Vespene:</label>
+        <br>
+        <input #newVespene>
+      </div>
+
+      <div>
+        <label>Description:</label>
+        <br>
+        <textarea #newDesc></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newMineral.value, newVespene.value, newDesc.value); newName.value=''; newMineral.value='';newVespene.value=''; newDesc.value=''">Add New Unit</button>
+    </div>
+  </div>
+</div>
